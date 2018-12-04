@@ -1,0 +1,13 @@
+PVERSION=20181204113553
+comp_pkg_MDEMO_0041.zip=20181204113553
+duoqu_data_pu_MDEMO_0041.zip=20181204113553
+duoqu_data_map_MDEMO_0041.zip=20181204113553
+duoqu_data_layout_MDEMO_0041.zip=20181204113553
+duoqu_data_hdtp_MDEMO_0041.zip=20181204113553
+duoqu_data_memmspd_MDEMO_0041.zip=20181204113553
+duoqu_data_sht_MDEMO_0041.zip=20181204113553
+duoqu_data_xyner_MDEMO_0041.zip=20181204113553
+duoqu_data_airdata_MDEMO_0041.zip=20181204113553
+duoqu_data_epv_MDEMO_0041.zip=20181204113553
+duoqu_data_signnum_MDEMO_0041.zip=20181204113553
+duoqu_data_keyscene_MDEMO_0041.zip=20181204113553

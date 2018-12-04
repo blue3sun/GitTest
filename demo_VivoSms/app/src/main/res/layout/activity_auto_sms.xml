@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/duoqu_home_title_lay"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#1792dd"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/duoqu_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_sms"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/contanier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+            <Switch
+                android:id="@+id/switch_script"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/switch_script_tips"
+                android:checked="true"
+                android:layout_marginTop="12dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical">
+                <Switch
+                    android:id="@+id/switch_virture_pone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/switch_virture_num_tips"
+                    android:checked="false" />
+                <EditText
+                    android:id="@+id/et_input_virture_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_virtual_phone"
+                    android:hint="@string/hint_virtual_phone"
+                    android:inputType="phone"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="12dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_import_inbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/duoqu_bottom_rectangle"
+                android:textColor="@color/black"
+                android:text="@string/select_sms_inbox" />
+            
+            <Button
+                android:id="@+id/bt_import_file_sms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/duoqu_bottom_rectangle"
+                android:textColor="@color/black"
+                android:text="@string/select_sms_path" />
+            <Button
+                android:id="@+id/bt_open_msg_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/duoqu_bottom_rectangle"
+                android:textColor="@color/black"
+                android:text="@string/open_msg_list"/>
+
+            <Button
+                android:id="@+id/bt_clear_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/duoqu_bottom_rectangle"
+                android:textColor="@color/black"
+                android:text="@string/clear_date"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_parse_result_dir_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="4dp"/>
+
+            <Button
+                android:id="@+id/bt_start_parse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/duoqu_bottom_rectangle"
+                android:text="@string/start_patch_parse"
+                android:enabled="false"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/tv_parse_file_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_parse_result_file_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:id="@+id/tv_parse_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:id="@+id/tv_parse_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

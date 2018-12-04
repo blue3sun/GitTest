@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">bizportdemo</string>
+    <string name="app_sms">短信情景识别评测</string>
+    <string name="switch_virture_num_tips">是否使用虚拟号码</string>
+    <string name="switch_script_tips">是否走脚本识别</string>
+    <string name="default_virtual_phone">106222222</string>
+    <string name="hint_virtual_phone">请输入虚拟号码</string>
+    <string name="empty_virture_phone">输入的虚拟号码为空</string>
+    <string name="select_sms_path">导入外部短信\n(请选择短信样本路径)</string>
+    <string name="select_sms_inbox">导入系统短信\n(从短信收件箱导入样例)</string>
+    <string name="dialog_title">提示</string>
+    <string name="dialog_msg">正在进行短信识别</string>
+    <string name="dialog_init_sdk">sdk初始化还未完成，请稍后...</string>
+    <string name="result_title">识别结果</string>
+    <string name="parse_empty_tip">解析结果为空</string>
+    <string name="open_msg_list">短信列表页</string>
+    <string name="clear_date">清除缓存</string>
+    <string name="start_patch_parse">开始批量解析</string>
+    <string name="stop_patch_parse">停止解析</string>
+    <string name="msg_is_null">短信对象为空</string>
+    <string name="msg_file_read_error">短信文件读取失败</string>
+
+    <string name="loading_msg">加载短信数据库中的短信....</string>
+    <string name="load_msg_finished">加载短信完成....</string>
+    <string name="empty_msg_list">短信列表为空</string>
+
+
+</resources>

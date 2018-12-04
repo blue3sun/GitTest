@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+repositories {
+	google()
+	jcenter()
+}
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "27.0.3"
+
+    signingConfigs {
+        release {
+            storeFile file('keystore.jks')
+            storePassword '123456'
+            keyAlias 'CN'
+            keyPassword '12345678'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.xy.bizportdemo"
+        minSdkVersion 21
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            debuggable true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+            api fileTree(include: ['*.jar'], dir: 'libs')
+}
